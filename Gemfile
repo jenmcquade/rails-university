@@ -29,6 +29,7 @@ gem 'bootsnap', '>= 1.4.2', require: false
 # Materialize CSS
 gem 'materialize-sass', '~> 1.0.0'
 gem 'material_icons'
+gem 'jquery'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
