@@ -1,0 +1,20 @@
+<% flash.each do |key, message| %>
+  <% 
+    if key == 'notice' || key == 'success' 
+      panel_class = 'teal'
+    else 
+      panel_class = 'red'
+    end
+  %>
+  <div class="container">
+    <div class="row">
+      <div class="col s12">
+        <div class="card-panel lighten-2 <%= panel_class %>" id="fade-out-target">
+          <span class="white-text">
+            <%= message %>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+<% end %>
