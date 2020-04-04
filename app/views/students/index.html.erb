@@ -14,7 +14,10 @@
           <p>Course Enrollments: None</p>
         </div>
         <div class="card-action">
-          <%= link_to 'View Profile', student_path(student) %>
+          <span><%= link_to 'View Profile', student_path(student) %></span>
+          <% if student == current_user %>
+            <span><%= link_to 'Edit Profile', edit_student_path(current_user) %></span>
+          <% end %>
         </div>
       </div>
     </div>
